@@ -11,6 +11,11 @@ SELECT *
 from Reservations
 where CustomerID ='64';
 
+Select * 
+from Reservations 
+Join Customers on Reservations.CustomerID = Customers.CustomerID
+Where Customers.FirstName = 'Norby' and Reservations.Date > '2022-07-24';
+
 -- Two ways to do this 
 
 DELETE From Reservations where ReservationID = 2000;
